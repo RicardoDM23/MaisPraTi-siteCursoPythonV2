@@ -1,0 +1,60 @@
+/* .navegacao {
+    background:rgba(200, 200, 200, 0.6)!important;
+    padding: 1rem 0;
+    background-color: #c8c8c8;
+
+} */
+.mLogo{
+    margin-left: 8rem;
+}
+#logoP {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #306998;
+    text-shadow: 1px 1px 2px #000;  
+}
+
+#logoY {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #FFD742;
+    text-shadow: 1px 1px 2px #000;
+}
+#logoPath{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px #000;
+}
+
+
+.btnHeader{
+    float: right;
+}
+.btnHeader .btn {
+    text-decoration: none;
+    margin: 1rem 2rem 0 0;
+    display: inline-block;
+    padding: 0.8rem 0.5rem;
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    color: #fff;
+}
+.red {
+    background-color: red;
+}
+.red:hover {
+    background-color: #f1262d;
+    color: #fff;
+}
+
+.btnHeader{
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+

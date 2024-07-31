@@ -1,0 +1,42 @@
+
+/* toTop Inicio */
+#toTopImg {
+    width: 40px;
+}
+#btnToTop {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    z-index: 20;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+/* toTop Fim */
+
+/* Mods Txt I */
+.textCP{
+    color: #306998;
+    text-shadow: 1px 1px 2px #000;
+}
+.textCY{
+    color: #FFD742;
+    text-shadow: 1px 1px 2px #000;
+}
+.textIndent{
+    text-indent: 5%;
+}
+.textJust{
+    text-align: justify;
+}
+.textContat {
+    text-decoration: none;
+}
+.textContat:hover{
+    text-decoration: underline;
+    color: #306998!important;
+}
+.materiasSect ul {
+    list-style: none;
+}
+/* Mods Txt F */

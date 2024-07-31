@@ -1,0 +1,26 @@
+/* Footer Inicio */
+footer {
+    position: relative;
+    padding: 2rem 0 1.2rem 0;
+    /* background-color: #c8c8c8; */
+}
+
+footer h4{
+    text-transform: uppercase;
+    color: #505050;
+    font-size: 0.9rem;
+    /* text-shadow: 1px 1px 2px #000; */
+}
+
+footer .navbar-nav a{
+    color: #fff;
+    text-decoration: none;
+}
+footer ul li{
+    list-style: none;
+}
+
+footer ul li a img{
+    margin: 0 1rem;
+}
+/* Footer Fim */

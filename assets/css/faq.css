@@ -1,0 +1,5 @@
+.sticky-top {
+    top: 70px;
+    z-index: 1020;
+    /* background-color: white;  */
+}

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PyPath - Home</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./assets/css/all.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <link rel="stylesheet" href="./assets/css/faq.css">
+    <link rel="stylesheet" href="./assets/css/mode.css">
+</head>
+
+<body>
+    <button onclick="toTop()" id="btnToTop">
+        <img src="./assets/icons/backtotop.jpg" id="toTopImg" />
+    </button>
+    <header id="header">
+        <nav class="navbar fixed-top navbar-expand-lg bg-white  shadow-sm navegacao">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand mLogo" href="index.html"><span id="logoP">P</span><span id="logoY">y</span><span
+                        id="logoPath" class="text-black">Path</span></a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-black" aria-current="page" href="#" onclick="requestPage('index.html')">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="#" onclick="requestPage('./pages/info.html')">Informações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="#" onclick="requestPage('./pages/materias.html')">Matérias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="#" onclick="requestPage('./pages/faq.html')">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="#" onclick="requestPage('./pages/contato.html')">Contato</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="darkModeToggle" onchange="toggleDarkMode()">
+                                <label class="form-check-label" for="darkModeToggle">Dark</label>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="content">
+            <section class="quemSomos bg-light">
+                <div class="container text-black">
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-10 my-3">
+                            <h2 class="text-center">Quem Somos.</h2>
+                            <p class="textIndent textJust">
+                                A PyPath é uma empresa dedicada ao ensino de programação em Python, oferecendo cursos
+                                online
+                                de alta qualidade que capacitam estudantes e profissionais a dominar essa linguagem de
+                                programação versátil e amplamente utilizada. Nossa missão é tornar o aprendizado de
+                                Python
+                                acessível, eficiente e aplicável a diversas áreas tecnológicas, ajudando nossos alunos a
+                                alcançar seus objetivos profissionais e pessoais.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pqpython">
+                <div class="container text-white">
+                    <div class="row d-flex justify-content-md-center">
+                        <div class="col-md-10 my-3">
+                            <h2 class="text-center">Por que estudar Python?</h2>
+                            <p class="textIndent textJust">
+                                Python é uma linguagem de programação versátil, fácil de
+                                aprender e amplamente utilizada em diversos setores da
+                                tecnologia. Sua sintaxe simples e clara facilita a leitura e a
+                                escrita de código, tornando-a uma excelente escolha para
+                                iniciantes e profissionais experientes. Além disso, Python
+                                possui uma vasta biblioteca de ferramentas e frameworks que
+                                aceleram o desenvolvimento de projetos, desde scripts simples
+                                até aplicações complexas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="utilizadoCards bg-light">
+                <div class="container text-black">
+                    <div class="row justify-content-md-center ">
+                        <div class="col-md-10 mt-3">
+                            <h3 class="text-center">No que Python é e pode ser utilizado?</h3>
+
+                            <p class="textIndent textJust">
+                                Python é uma linguagem de propósito geral, o que significa que
+                                pode ser usada em uma ampla variedade de aplicações, incluindo:
+                            </p>
+                        </div>
+                        <div class="row row-cols-1 row-cols-md-3 g-2 mb-3 row-gap-3">
+                            <div class="col">
+                                <div class="card h-100 cardColor">
+                                    <img src="./assets/images/devWebPy.jpg" class="card-img-top cardImgAjust" alt="...">
+                                    <div class="card-body ">
+                                        <h5 class="card-title">Desenvolvimento Web</h5>
+                                        <p class="card-text textIndent textJust">
+                                            Frameworks como Django e Flask permitem criar sites e
+                                            aplicativos web robustos. Análise de Dados: Bibliotecas como Pandas, NumPy e
+                                            Matplotlib facilitam a manipulação, análise e visualização de dados.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 cardColor">
+                                    <img src="./assets/images/iaPy.jpg" class="card-img-top cardImgAjust" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Inteligência Artificial e Machine Learning</h5>
+                                        <p class="card-text textIndent textJust">
+                                            Ferramentas como TensorFlow, Keras e Scikit-learn tornam o
+                                            desenvolvimento de modelos de IA mais acessível.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 cardColor">
+                                    <img src="./assets/images/AutTafPy.png" class="card-img-top cardImgAjust" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Automação de Tarefas</h5>
+                                        <p class="card-text textIndent textJust">
+                                            Python pode ser usado para automatizar tarefas repetitivas,
+                                            economizando tempo e esforço.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 cardColor">
+                                    <img src="./assets/images/DevJogosPy.jpg" class="card-img-top cardImgAjust"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Desenvolvimento de Jogos</h5>
+                                        <p class="card-text textIndent textJust">
+                                            Bibliotecas como Pygame permitem a criação de jogos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 cardColor">
+                                    <img src="./assets/images/CompCiPy.png" class="card-img-top cardImgAjust" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Computação Científica</h5>
+                                        <p class="card-text textIndent textJust">
+                                            Python é amplamente utilizado em pesquisas científicas para
+                                            simulações e análises de dados complexos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 cardColor">
+                                    <img src="./assets/images/DevSofPy.jpg" class="card-img-top cardImgAjust" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Desenvolvimento de Software</h5>
+                                        <p class="card-text textIndent textJust">
+                                            Pode ser usado para criar aplicações de desktop e ferramentas
+                                            de software diversas.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="carouselSect d-none d-md-block">
+                <div class="container">
+                    <div class="row d-flex justify-content-md-center">
+                        <div class="col-md-12 my-4">
+                            <div id="carousel" class="carousel slide carouselFotos" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"
+                                        aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"
+                                        aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="4"
+                                        aria-label="Slide 5"></button>
+                                </div>
+                                <div class="carousel-inner carouselContainer">
+                                    <div class="carousel-item active">
+                                        <img src="./assets/images/carousel0.webp" class="d-block w-100 carouselImgs"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/images/carousel1.jpg" class="d-block w-100 carouselImgs"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/images/carousel2.webp" class="d-block w-100 carouselImgs"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/images/carousel3.jpg" class="d-block w-100 carouselImgs"
+                                            alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/images/carousel4.jpg" class="d-block w-100 carouselImgs"
+                                            alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="resumoMaterias bg-light">
+                <div class="container text-black">
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-8 my-3">
+
+                            <h5 class="text-center">Durante o curso você irá passar pelas seguintes matérias:</h5>
+                            <h4 class="mx-1"><strong class="textCP">1.</strong> Introdução ao Python e Configuração do
+                                Ambiente</h4>
+                            <p class="mx-4 textIndent textJust">
+                                Aprenda os conceitos básicos da linguagem Python, configure seu
+                                ambiente de desenvolvimento e escreva seus primeiros programas.
+                            </p>
+                            <h4 class="mx-1"><strong class="textCP">2.</strong> Estruturas de Dados e Controle de Fluxo
+                            </h4>
+                            <p class="mx-4 textIndent textJust">
+                                Explore variáveis, listas, tuplas, dicionários e estruturas de
+                                controle como loops e condicionais.
+                            </p>
+                            <h4 class="mx-1"><strong class="textCP">3.</strong> Funções e Módulos</h4>
+                            <p class="mx-4 textIndent textJust">
+                                Entenda como definir e usar funções, bem como a importância dos
+                                módulos e pacotes em Python.
+                            </p>
+                            <h4 class="mx-1"><strong class="textCP">4.</strong> Programação Orientada a Objetos</h4>
+                            <p class="mx-4 textIndent textJust">
+                                Descubra os princípios da POO em Python, incluindo classes,
+                                objetos, herança e polimorfismo.
+                            </p>
+                            <h4 class="mx-1"><strong class="textCP">5.</strong> Manipulação de Arquivos e Exceções</h4>
+                            <p class="mx-4">
+                                Aprenda a ler e escrever arquivos, além de tratar exceções para
+                                criar programas robustos.
+                            </p>
+                            <h4 class="mx-1"><strong class="textCP">6.</strong> Bibliotecas para Análise de Dados</h4>
+                            <p class="mx-4 textIndent textJust">
+                                Familiarize-se com bibliotecas essenciais como Pandas e NumPy
+                                para manipulação e análise de dados.
+                            </p>
+                            <h4 class="mx-1"><strong class="textCP">7.</strong> Visualização de Dados</h4>
+                            <p class="mx-4 textIndent textJust">
+                                Utilize Matplotlib e Seaborn para criar visualizações gráficas
+                                que facilitam a interpretação de dados.
+                            </p>
+                            <h4 class="mx-1"><strong class="textCP">8.</strong> Desenvolvimento Web com Django</h4>
+                            <p class="mx-4 textIndent textJust">
+                                Construa aplicações web usando o framework Django, desde a
+                                configuração inicial até a criação de funcionalidades avançadas.
+                            </p>
+                            <h4 class="mx-1"><strong class="textCP">9.</strong> Introdução a Machine Learning</h4>
+                            <p class="mx-4 textIndent textJust">
+                                Explore os conceitos básicos de machine learning e implemente
+                                modelos simples usando Scikit-learn.
+                            </p>
+                            <h4 class="mx-1"><strong class="textCP">10.</strong> Projeto Final!</h4>
+                            <p class="mx-4 textIndent textJust">
+                                Aplique todo o conhecimento adquirido ao longo do curso em um
+                                projeto final prático e abrangente.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="depoimentos">
+                <div class="container my-3">
+                    <h2 class="my-2 text-center text-white">Depoimentos</h2>
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="depoimento d-flex align-items-start">
+                                    <img src="./assets/icons/quoteIcon.svg" alt="Aspas" class="quote me-3">
+                                    <div>
+                                        <p class="textJust">Antes de começar o curso, eu não tinha experiência
+                                            com programação. Graças às aulas detalhadas e ao suporte dos
+                                            instrutores, consegui aprender Python e hoje trabalho como
+                                            desenvolvedor web.</p>
+                                        <div class="person-info">
+                                            <img src="./assets/icons/IconM3.png" alt="Pessoa" class="person">
+                                            <div>
+                                                <h5 class="mb-0">João Silva </h5>
+                                                <small>Aluno(a)</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="depoimento d-flex align-items-start">
+                                    <img src="./assets/icons/quoteIcon.svg" alt="Aspas" class="quote me-3">
+                                    <div>
+                                        <p class="textJust">O curso é muito bem estruturado e os conteúdos
+                                            são apresentados de forma clara. As práticas e os projetos me
+                                            ajudaram a consolidar o conhecimento e a ganhar confiança.</p>
+                                        <div class="person-info">
+                                            <img src="./assets/icons/IconW1.png" alt="Pessoa" class="person">
+                                            <div>
+                                                <h5 class="mb-0">Maria Oliveira</h5>
+                                                <small>Aluno(a)</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="depoimento d-flex align-items-start">
+                                    <img src="./assets/icons/quoteIcon.svg" alt="Aspas" class="quote me-3">
+                                    <div>
+                                        <p class="textJust">Nosso objetivo é sempre proporcionar uma
+                                            experiência de aprendizado completa. É gratificante ver como os
+                                            alunos se desenvolvem e aplicam o que aprenderam de forma
+                                            prática e eficiente.</p>
+                                        <div class="person-info">
+                                            <img src="./assets/icons/IconW2.png" alt="Pessoa" class="person">
+                                            <div>
+                                                <h5 class="mb-0">Juliana Mendes</h5>
+                                                <small>Professor(a)</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="depoimento d-flex align-items-start">
+                                    <img src="./assets/icons/quoteIcon.svg" alt="Aspas" class="quote me-3">
+                                    <div>
+                                        <p class="textJust">O curso superou minhas expectativas. A abordagem
+                                            prática e os projetos desafiadores me prepararam para enfrentar
+                                            problemas reais no trabalho. Recomendo para todos que querem
+                                            aprender Python de verdade.</p>
+                                        <div class="person-info">
+                                            <img src="./assets/icons/IconM2.png" alt="Pessoa" class="person">
+                                            <div>
+                                                <h5 class="mb-0">Carlos Almeida</h5>
+                                                <small>Aluno(a)</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="depoimento d-flex align-items-start">
+                                    <img src="./assets/icons/quoteIcon.svg" alt="Aspas" class="quote me-3">
+                                    <div>
+                                        <p class="textJust">Ensinar Python é uma experiência
+                                            gratificante. Ver o progresso dos alunos e como eles aplicam o
+                                            que aprenderam em projetos reais é inspirador.</p>
+                                        <div class="person-info">
+                                            <img src="./assets/icons/IconM2.png" alt="Pessoa" class="person">
+                                            <div>
+                                                <h5 class="mb-0">Lucas Andrade</h5>
+                                                <small>Professor(a)</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="depoimento d-flex align-items-start">
+                                    <img src="./assets/icons/quoteIcon.svg" alt="Aspas" class="quote me-3">
+                                    <div>
+                                        <p class="textJust">A flexibilidade do curso foi essencial para
+                                            mim. Consegui estudar no meu próprio ritmo e, ao mesmo tempo,
+                                            receber suporte imediato dos instrutores. Hoje sou analista de
+                                            dados e uso Python diariamente.</p>
+                                        <div class="person-info">
+                                            <img src="./assets/icons/IconW2.png" alt="Pessoa" class="person">
+                                            <div>
+                                                <h5 class="mb-0">Fernanda Santos</h5>
+                                                <small>Aluno(a)</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="depoimento d-flex align-items-start">
+                                    <img src="./assets/icons/quoteIcon.svg" alt="Aspas" class="quote me-3">
+                                    <div>
+                                        <p class="textJust">O curso foi desenvolvido com muito cuidado para
+                                            garantir que os alunos tenham uma base sólida e possam enfrentar
+                                            desafios reais no mercado de trabalho.</p>
+                                        <div class="person-info">
+                                            <img src="./assets/icons/IconW1.png" alt="Pessoa" class="person">
+                                            <div>
+                                                <h5 class="mb-0">Ana Lima</h5>
+                                                <small>Professor(a)</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="depoimento d-flex align-items-start">
+                                    <img src="./assets/icons/quoteIcon.svg" alt="Aspas" class="quote me-3">
+                                    <div>
+                                        <p class="textJust">Os conteúdos sobre machine learning foram
+                                            fascinantes. Nunca pensei que poderia entender e aplicar esses
+                                            conceitos em tão pouco tempo. O curso realmente abre portas para
+                                            novas oportunidades.</p>
+                                        <div class="person-info">
+                                            <img src="./assets/icons/IconM1.png" alt="Pessoa" class="person">
+                                            <div>
+                                                <h5 class="mb-0">Rafael Costa</h5>
+                                                <small>Aluno(a)</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="depoimento d-flex align-items-start">
+                                    <img src="./assets/icons/quoteIcon.svg" alt="Aspas" class="quote me-3">
+                                    <div>
+                                        <p class="textJust">A comunidade do curso é incrível. Trocar
+                                            experiências e dicas com outros alunos foi muito enriquecedor.
+                                            Senti que não estava sozinha durante todo o processo de
+                                            aprendizado.</p>
+                                        <div class="person-info">
+                                            <img src="./assets/icons/IconW3.png" alt="Pessoa" class="person">
+                                            <div>
+                                                <h5 class="mb-0">Isabela Ferreira</h5>
+                                                <small>Aluno(a)</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="depoimento d-flex align-items-start">
+                                    <img src="./assets/icons/quoteIcon.svg" alt="Aspas" class="quote me-3">
+                                    <div>
+                                        <p class="textJust">Ver o crescimento dos alunos desde o início
+                                            do curso até a conclusão dos projetos finais é extremamente
+                                            recompensador. Eles saem preparados para o mercado e com uma
+                                            base sólida em Python.</p>
+                                        <div class="person-info">
+                                            <img src="./assets/icons/IconM3.png" alt="Pessoa" class="person">
+                                            <div>
+                                                <h5 class="mb-0">Marcos Souza</h5>
+                                                <small>Professor(a)</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="recursos bg-light d-none d-md-block">
+                <div class="container py-4">
+                    <div class="row justify-content-md-center">
+                        <h3 class="mb-4 text-center">Recursos Disponíveis</h3>
+
+                        <div class="col-md-8">
+                            <nav>
+                                <div class="nav nav-tabs bg-light " id="nav-tab" role="tablist">
+
+                                    <button class="nav-link m-auto text-black active bg-white" id="nav-1-tab"
+                                        data-bs-toggle="tab" data-bs-target="#nav-1" type="button" role="tab"
+                                        aria-controls="nav-1" aria-selected="true">Aula</button>
+
+                                    <button class="nav-link m-auto text-black bg-white" id="nav-2-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-2" type="button" role="tab" aria-controls="nav-2"
+                                        aria-selected="false">Material</button>
+
+                                    <button class="nav-link m-auto text-black bg-white" id="nav-3-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-3" type="button" role="tab" aria-controls="nav-3"
+                                        aria-selected="false">Exercícios</button>
+
+                                    <button class="nav-link m-auto text-black bg-white" id="nav-4-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-4" type="button" role="tab" aria-controls="nav-4"
+                                        aria-selected="false">Fórum</button>
+
+                                    <button class="nav-link m-auto text-black bg-white" id="nav-5-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-5" type="button" role="tab" aria-controls="nav-5"
+                                        aria-selected="false">Suporte</button>
+
+                                </div>
+                            </nav>
+                            <div class="tab-content bg-light" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-1" role="tabpanel"
+                                    aria-labelledby="nav-1-tab">
+                                    <div id="divAulaGravada">
+                                        <div id="divTextRec"
+                                            class="text-center position-relative top-50 start-50 translate-middle container-fluid">
+                                            <h2>
+                                                Aulas Online e Gravadas:
+                                            </h2>
+                                            <h4>
+                                                Vídeos com explicações detalhadas e exemplos práticos.
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-2-tab">
+                                    <div id="divMatApoio">
+                                        <div id="divTextRec"
+                                            class="text-center position-relative top-50 start-50 translate-middle container-fluid">
+                                            <h2>
+                                                Material de Apoio:
+                                            </h2>
+                                            <h4>
+                                                Apostilas, slides e anotações complementares.
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav-3-tab">
+                                    <div id="divExerPrat">
+                                        <div id="divTextRec"
+                                            class="text-center position-relative top-50 start-50 translate-middle container-fluid">
+                                            <h2>
+                                                Exercícios Práticos:
+                                            </h2>
+                                            <h4>
+                                                Tarefas e desafios que permitem aos alunos aplicar o que aprenderam.
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-4" role="tabpanel" aria-labelledby="nav-4-tab">
+                                    <div id="divForum">
+                                        <div id="divTextRec"
+                                            class="text-center position-relative top-50 start-50 translate-middle container-fluid">
+                                            <h2>
+                                                Fórum de Discussão:
+                                            </h2>
+                                            <h4>
+                                                Plataforma onde os alunos podem interagir, tirar dúvidas e trocar
+                                                experiências.
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-5" role="tabpanel" aria-labelledby="nav-5-tab">
+                                    <div id="divSup">
+                                        <div id="divTextRec"
+                                            class="text-center position-relative top-50 start-50 translate-middle container-fluid">
+                                            <h2>
+                                                Suporte ao Aluno:
+                                            </h2>
+                                            <h4>
+                                                Acesso a instrutores para esclarecer dúvidas e oferecer feedback.
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer id="footer" class="shadow-sm bg-white position-absolute w-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="d-sm-flex d-lg-block justify-content-center col-md-12 col-lg-2 ">
+                    <h4 class="text-black">Atividade 4</h4>
+                    <h4 class="text-black">Ricardo Muenchen</h4>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <ul class="d-flex justify-content-center justify-content-lg-end">
+                        <li>
+                            <a href="">
+                                <img src="./assets/icons/facebook.png" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./assets/icons/twitter.png" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./assets/icons/instagram.png" alt="" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/contato.js"></script>
+    <script src="./assets/js/faq.js"></script>
+    <script src="./assets/js/requisicoes.js"></script>
+    
+    <script src="./assets/js/dMode.js"></script>
+</body>
+
+</html>

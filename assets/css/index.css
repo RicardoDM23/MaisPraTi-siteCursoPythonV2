@@ -1,0 +1,160 @@
+/* Cards I */
+.cardColor {
+    background: #cecece;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cardColor:hover {
+    border: 1px solid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.cardImgAjust{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+/* Cards F */
+
+/* Carousel I */
+.carouselFotos {
+    position: relative;
+    height: 500px;
+    width: 80%;
+    margin: 0 auto;
+}
+.carouselContainer {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.carouselImgs {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Carousel F */
+
+/* Depoimentos Inicio */
+
+.depoimento {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+.depoimento img.quote {
+    width: 50px;
+    height: 50px;
+}
+.depoimento img.person {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.depoimento .person-info {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.depoimento .person-info img {
+    margin-right: 1rem;
+}
+
+/* Depoimentos Fim */
+
+/* Recursos Inicio */
+#divTextRec{
+    background: rgba(0,0,0,0.4);
+    width: auto;
+    color: #fff;
+}
+
+#divAulaGravada{
+    background: url("../images/aulasGravOn.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 350px;
+    object-fit: fill;
+}
+
+#divMatApoio{
+    background: url("../images/matApoio.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 350px;
+    object-fit: fill;
+}
+
+#divExerPrat{
+    background: url("../images/exercPrat.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 350px;
+    object-fit: fill;
+}
+
+#divForum{
+    background: url("../images/forum.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 350px;
+    object-fit: fill;
+}
+
+#divSup{
+    background: url("../images/supAlu.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 350px;
+    object-fit: fill;
+}
+
+
+.recursos .logo {
+    width: 100px;
+    border: 1px solid;
+    margin-right: 1rem;
+}
+
+
+.recursos .content{
+    margin-left: 1rem;
+    max-width: 550px;
+}
+
+
+.recursos .divNav {
+    margin-top: 1rem;
+}
+
+
+.recursos .nav .active{
+    background: #56E1FE!important;
+    /* color: #fff!important; */
+}
+
+.recursos .nav-link{
+    /* background: #272F32!important; */
+    /* color: #fff!important; */
+    border: none!important;
+    /* margin-right: 0.3rem; */
+    /* padding: 1rem; */
+    /* min-width: 150px; */
+}
+
+.recursos .titulo{
+    color: #56E1FE;
+}
+
+.recursos .tab-pane{
+    /* background: #2C3942!important; */
+    color: #fff!important;
+    border: none!important;
+}
+
+/* Recursos Fim */
